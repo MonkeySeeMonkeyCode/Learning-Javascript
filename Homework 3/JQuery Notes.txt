@@ -1,0 +1,28 @@
+<script src="jquery.js"></script>
+
+Selecting Dom Elements
+
+	$("*")		Selects all elements
+	$(this)		Selects the current element
+	$("div")	Selects all <div> elements
+	$(".title")	Selects all elements with class="title"
+	$("#name")	Selects the element with id="name"
+
+jQuery DOM Manipulation 
+	To manipulate DOM contents, the general format is
+	$(selector).action(arguments...)
+
+Event listener
+	general format is $(selector).event(callback)
+
+
+
+
+
+Adv Selectors
+$(someNodes).find(selector) will search someNodes' children for selector.
+$ selectors can be chained
+	$("div.book") 	selects the div with class="blook"
+	$("div, .book") selects all divs and all elements with class="book"
+: can be used to specify element properties
+	$("p:hidden") selects all <p> elements that are visually hidden
