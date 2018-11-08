@@ -29,35 +29,26 @@ class FontChooser extends React.Component {
     }
     
 	handleTextClick() {
-		console.log('Text Click')
 		if ( this.state.hide == false ) {
-			console.log('hide');
 			this.setState( { hide : true } );
-			console.log(this.state.hide);
 		}
 		else if ( this.state.hide == true ) {
-			console.log('unhide');
 			this.setState( { hide : false } );
-			console.log(this.state.hide);
 		}
 	}
 	
 	handleBoldClick() {
-		console.log('BoldClick')
 		if ( this.state.bold == 'false' ) {
-			console.log('checkbox being checked');
 			this.setState( { bold : 'true' } );
-			this.setState({check : true});
+			this.setState({check : 'true'});
 		}
 		else if ( this.state.bold == 'true' ) {
-			console.log('checkbox being unchecked');
 			this.setState( { bold : 'false' } );
-			this.setState({check : false});
+			this.setState({check : 'false'});
 		}
 	}
 
 	handleDecreaseButton() {
-		console.log('decrease');
 		if ( Number(this.state.size) > Number(this.state.min) ) {
 			this.setState( { size : Number(this.state.size)-1 } );
 			this.setState( { color : 'false' } );
@@ -68,7 +59,6 @@ class FontChooser extends React.Component {
 	}
 
 	handleIncreaseButton(){
-		console.log('increase');
 		if ( Number(this.state.size) < Number(this.state.max) ) {
 			this.setState( { size : Number(this.state.size)+1 } );
 			this.setState( { color : 'false' } );
@@ -88,7 +78,7 @@ class FontChooser extends React.Component {
 		var bold = this.state.bold == 'true' ? 'bold' : 'normal';
 		var size = Number(this.state.size);
 		var color = this.state.color == 'true' ? 'red' : 'black';
-		var check = this.state.check;
+		var check = this.state.check == 'false' ? false : true;
 	return(
 		   <div>
 	       <input type="checkbox" id="boldCheckbox" checked={check} onChange={this.handleBoldClick.bind(this)} hidden={hide}/>
