@@ -38,9 +38,9 @@ class App extends Component {
    * the state, this function  should then re-render this App component.
    */
   handleAddItem(item) {
-      let items = this.state.items;
-      console.log(items)
-        items.findIndex(function(i){return i==item});
+      //let items = this.state.items;
+      //console.log(items)
+        //items.findIndex(function(i){return i==item});
       console.log("BLEH")
   }
 

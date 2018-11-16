@@ -11,7 +11,16 @@ class AddItem extends Component {
 
   handleSubmit(e) {
       e.preventDefault(); // this prevents the page from reloading -- do not delete this line!
-      this.props.addItem("ABC")
+      if(this.refs.id.value ==='') {
+        alert('Name is required');
+      } else {
+        this.setState({newItem:{
+          name: this.refs.id.value
+        }}, function() {
+          console.log(this.state);
+          //this.props.addItem(this.state.newItem);
+        });
+      }
   }
     
 
