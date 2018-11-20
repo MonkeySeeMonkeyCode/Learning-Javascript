@@ -19,14 +19,14 @@ class App extends Component {
    * array and then adding a new property in the "items" object that has the same name
    * as the value put into the "lists" array. It should then re-render this App component.
    */
-  handleAddList(list) {
+  handleAddList(name) {
       let lists = this.state.lists;
-      lists.push(list);
-      this.setState({items:{
-        list: []}
-      })
+      let items = this.state.items;
+      lists.push(name);
+      items[name] = [];
       this.setState({lists:lists});
-
+      //this.setState({items:items});
+      this.setState({items:items}, function () {console.log(this.state)});
   }
 
   /**
