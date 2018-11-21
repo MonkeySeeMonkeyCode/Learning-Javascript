@@ -17,8 +17,8 @@ class AddItem extends Component {
         this.setState({newItem:{
           name: this.refs.id.value
         }}, function() {
-          console.log(this.state);
-          //this.props.addItem(this.state.newItem);
+          console.log("AddItem "+this.state);
+          this.props.addItem(this.state.newItem,this.props.idName);
         });
       }
   }

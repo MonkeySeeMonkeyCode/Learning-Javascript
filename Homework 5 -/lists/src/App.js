@@ -37,11 +37,10 @@ class App extends Component {
    * to an array of the items in that list. After updating the "items" part of 
    * the state, this function  should then re-render this App component.
    */
-  handleAddItem(item) {
-      //let items = this.state.items;
-      //console.log(items)
-        //items.findIndex(function(i){return i==item});
-      console.log("BLEH")
+  handleAddItem(item,id) {
+      let items = this.state.items;
+      items[id].push(item);
+      this.setState({items:items}, function() {console.log(this.state)});
   }
 
   /**
