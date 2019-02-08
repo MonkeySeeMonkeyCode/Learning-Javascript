@@ -1,0 +1,15 @@
+{
+  "name": "homework6node",
+  "version": "1.0.0",
+  "description": "Edx SD4x Programming for the Web with Javascript HW6",
+  "main": "4.2-express-hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.15"
+  }
+}
