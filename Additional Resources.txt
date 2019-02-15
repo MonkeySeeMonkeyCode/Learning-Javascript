@@ -1,0 +1,18 @@
+For supplemental reading material and resources for Week 1 of the course (HTML and CSS), we recommend the following
+
+httpswww.w3schools.comhtml
+httpswww.w3schools.comcss
+For supplemental reading material and resources for Week 2 of the course (JavaScript and jQuery), we recommend the following
+
+httpswww.w3schools.comjs
+httpswww.w3schools.comjquery
+For supplemental reading material and resources for Week 3 of the course (React.js and D3.js), we recommend the following
+
+httpsfacebook.github.ioreact
+httpsd3js.org
+For supplemental reading material and resources for Week 4 of the course (Node.js, Express, MongoDB, and Mongoose), we recommend the following
+
+httpsnodejs.org
+httpsexpressjs.com
+httpswww.mongodb.com
+httpmongoosejs.com
